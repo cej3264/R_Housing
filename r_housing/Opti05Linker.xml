@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='utf-8'?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <NamespaceUris>
+    <Uri>127.0.0.1</Uri>
+  </NamespaceUris>
+  <Aliases>
+    <Alias Alias="Boolean">i=1</Alias>
+    <Alias Alias="Double">i=11</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="HasModellingRule">i=37</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasSubtype">i=45</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+  </Aliases>
+  <UAObjectType NodeId="i=40001" BrowseName="0:Opti05Type">
+    <DisplayName>Opti05Type</DisplayName>
+    <Description>Opti05Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+      <Reference ReferenceType="HasComponent">i=40002</Reference>
+      <Reference ReferenceType="HasComponent">i=40003</Reference>
+      <Reference ReferenceType="HasComponent">i=40004</Reference>
+      <Reference ReferenceType="HasComponent">i=40006</Reference>
+      <Reference ReferenceType="HasComponent">i=40013</Reference>
+      <Reference ReferenceType="HasComponent">i=40015</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="i=40002" BrowseName="0:Configuration" ParentNodeId="i=40001">
+    <DisplayName>Configuration</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40001</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=40003" BrowseName="0:Information" ParentNodeId="i=40001">
+    <DisplayName>Information</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40001</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="i=40004" BrowseName="0:Initiation" ParentNodeId="i=40001">
+    <DisplayName>Initiation</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40001</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">i=40005</Reference>
+    </References>
+  </UAObject>
+  <UAMethod NodeId="i=40005" BrowseName="0:Initiate" ParentNodeId="i=40004">
+    <DisplayName>Initiate</DisplayName>
+    <Description>Initiate</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40004</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAMethod>
+  <UAObject NodeId="i=40006" BrowseName="0:Operation" ParentNodeId="i=40001">
+    <DisplayName>Operation</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40001</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">i=40007</Reference>
+      <Reference ReferenceType="HasComponent">i=40008</Reference>
+      <Reference ReferenceType="HasComponent">i=40009</Reference>
+      <Reference ReferenceType="HasComponent">i=40010</Reference>
+      <Reference ReferenceType="HasComponent">i=40011</Reference>
+      <Reference ReferenceType="HasComponent">i=40012</Reference>
+    </References>
+  </UAObject>
+  <UAMethod NodeId="i=40007" BrowseName="0:Move" ParentNodeId="i=40006">
+    <DisplayName>Move</DisplayName>
+    <Description>Move</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40006</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="i=40008" BrowseName="0:M_Index" ParentNodeId="i=40006" DataType="String" AccessLevel="3" UserAccessLevel="3">
+    <DisplayName>M_Index</DisplayName>
+    <Description>M_Index</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40006</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:String>Null</uax:String>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="i=40009" BrowseName="0:Stay" ParentNodeId="i=40006">
+    <DisplayName>Stay</DisplayName>
+    <Description>Stay</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40006</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAMethod>
+  <UAMethod NodeId="i=40010" BrowseName="0:Stop" ParentNodeId="i=40006">
+    <DisplayName>Stop</DisplayName>
+    <Description>Stop</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40006</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAMethod>
+  <UAMethod NodeId="i=40011" BrowseName="0:Grip" ParentNodeId="i=40006">
+    <DisplayName>Grip</DisplayName>
+    <Description>Grip</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40006</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="i=40012" BrowseName="0:G_Index" ParentNodeId="i=40006" DataType="Boolean" AccessLevel="3" UserAccessLevel="3">
+    <DisplayName>G_Index</DisplayName>
+    <Description>G_Index</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40006</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:Boolean>true</uax:Boolean>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="i=40013" BrowseName="0:Action" ParentNodeId="i=40001">
+    <DisplayName>Action</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40001</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">i=40014</Reference>
+    </References>
+  </UAObject>
+  <UAMethod NodeId="i=40014" BrowseName="0:Start" ParentNodeId="i=40013">
+    <DisplayName>Start</DisplayName>
+    <Description>Start</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40013</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAMethod>
+  <UAObject NodeId="i=40015" BrowseName="0:Status" ParentNodeId="i=40001">
+    <DisplayName>Status</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40001</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">i=40016</Reference>
+      <Reference ReferenceType="HasComponent">i=40017</Reference>
+      <Reference ReferenceType="HasComponent">i=40018</Reference>
+      <Reference ReferenceType="HasComponent">i=40019</Reference>
+      <Reference ReferenceType="HasComponent">i=40020</Reference>
+      <Reference ReferenceType="HasComponent">i=40021</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="i=40016" BrowseName="0:isRunning" ParentNodeId="i=40015" DataType="Boolean">
+    <DisplayName>isRunning</DisplayName>
+    <Description>isRunning</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40015</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:Boolean>true</uax:Boolean>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=40017" BrowseName="0:Cur_Angles" ParentNodeId="i=40015" DataType="String">
+    <DisplayName>Cur_Angles</DisplayName>
+    <Description>Cur_Angles</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40015</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:String>Null</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=40018" BrowseName="0:Cur_Location" ParentNodeId="i=40015" DataType="String">
+    <DisplayName>Cur_Location</DisplayName>
+    <Description>Cur_Location</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40015</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:String>Null</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=40019" BrowseName="0:Speed" ParentNodeId="i=40015" DataType="Double" AccessLevel="3" UserAccessLevel="3">
+    <DisplayName>Speed</DisplayName>
+    <Description>Speed</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40015</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="i=40020" BrowseName="0:Acceleration" ParentNodeId="i=40015" DataType="Double" AccessLevel="3" UserAccessLevel="3">
+    <DisplayName>Acceleration</DisplayName>
+    <Description>Acceleration</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40015</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="i=40021" BrowseName="0:Apply" ParentNodeId="i=40015">
+    <DisplayName>Apply</DisplayName>
+    <Description>Apply</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=40015</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAMethod>
+</UANodeSet>
